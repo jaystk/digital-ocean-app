@@ -69,7 +69,7 @@ const GuessRage = () => {
           <button className="px-4 py-2 bg-pink-500 text-white rounded-lg shadow-md hover:bg-pink-700 transition-colors" onClick={() => handleColorChange('pink')}>Pink</button>
         </div>
 
-        <div className="container mx-auto p-4 min-h-screen">
+        <div className="container mx-auto p-4 pb-10 min-h-screen">
           <div className="grid grid-cols-7 gap-2 h-full">
             {images.map((image, index) => (
               <ImageCard 
