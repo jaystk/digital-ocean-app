@@ -58,15 +58,15 @@ const GuessRage = () => {
     <>
       <div className='flex bg-blue-950'>
       <div className='flex flex-col space-y'>
-          <button className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-700 transition-colors" onClick={() => handleColorChange('red')}>Red</button>
-          <button className="px-4 py-2 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-700 transition-colors" onClick={() => handleColorChange('orange')}>Orange</button>
-          <button className="px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-700 transition-colors" onClick={() => handleColorChange('yellow')}>Yellow</button>
-          <button className="px-4 py-2 bg-lime-500 text-white rounded-lg shadow-md hover:bg-lime-700 transition-colors" onClick={() => handleColorChange('lime')}>Lime</button>
-          <button className="px-4 py-2 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-700 transition-colors" onClick={() => handleColorChange('green')}>Green</button>
-          <button className="px-4 py-2 bg-teal-500 text-white rounded-lg shadow-md hover:bg-teal-700 transition-colors" onClick={() => handleColorChange('teal')}>Teal</button>
-          <button className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 transition-colors" onClick={() => handleColorChange('blue')}>Blue</button>
-          <button className="px-4 py-2 bg-purple-500 text-white rounded-lg shadow-md hover:bg-purple-700 transition-colors" onClick={() => handleColorChange('purple')}>Purple</button>
-          <button className="px-4 py-2 bg-pink-500 text-white rounded-lg shadow-md hover:bg-pink-700 transition-colors" onClick={() => handleColorChange('pink')}>Pink</button>
+          <button className="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-700 transition-colors" onClick={() => handleColorChange('red')}>Question 1</button>
+          <button className="px-4 py-2 bg-orange-500 text-white rounded-lg shadow-md hover:bg-orange-700 transition-colors" onClick={() => handleColorChange('orange')}>Question 2</button>
+          <button className="px-4 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-700 transition-colors" onClick={() => handleColorChange('yellow')}>Question 3</button>
+          <button className="px-4 py-2 bg-lime-500 text-white rounded-lg shadow-md hover:bg-lime-700 transition-colors" onClick={() => handleColorChange('lime')}>Question 4</button>
+          <button className="px-4 py-2 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-700 transition-colors" onClick={() => handleColorChange('green')}>Question 5</button>
+          <button className="px-4 py-2 bg-teal-500 text-white rounded-lg shadow-md hover:bg-teal-700 transition-colors" onClick={() => handleColorChange('teal')}>Question 6</button>
+          <button className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 transition-colors" onClick={() => handleColorChange('blue')}>Question 7</button>
+          <button className="px-4 py-2 bg-purple-500 text-white rounded-lg shadow-md hover:bg-purple-700 transition-colors" onClick={() => handleColorChange('purple')}>Question 8</button>
+          <button className="px-4 py-2 bg-pink-500 text-white rounded-lg shadow-md hover:bg-pink-700 transition-colors" onClick={() => handleColorChange('pink')}>Final Guess</button>
         </div>
 
         <div className="container mx-auto p-4 pb-10 min-h-screen">
