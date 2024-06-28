@@ -1,0 +1,116 @@
+import React, { useState } from 'react';
+import { Input } from "@material-tailwind/react";
+
+const GuessWho = () => {
+  const images = [
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test1" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test2" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test3" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test4" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test5" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test6" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test7" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test8" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test9" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test10" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test11" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test12" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test13" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test14" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test15" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test16" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test17" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test18" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test19" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test20" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test21" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test22" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test23" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test24" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test25" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test26" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test27" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test28" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test29" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test30" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test31" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test32" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test33" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test34" },
+    { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "test35" },
+
+    
+
+  ];
+
+
+  const [currentColor, setCurrentColor] = useState('red');
+
+  return (
+
+    <>
+      <div className='flex bg-blue-950'>
+        <div className='flex flex-col w-72 gap-6'>
+         <button onClick={() => setCurrentColor('purple')} className="bg-purple-500 text-white p-2 rounded">Question 4</button>
+
+          <Input color="blue" label="Input Blue" outline="red" />
+          <Input color="purple" label="Input Purple" />
+          <Input color="indigo" label="Input Indigo" />
+
+          <Input color="teal" label="Input Teal" />
+          <Input
+        type="email"
+        placeholder="Email Address"
+        className="!border !border-gray-300 bg-red-500 text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10"
+        labelProps={{
+          className: "hidden",
+        }}
+        containerProps={{ className: "min-w-[100px]" }}
+      />
+
+      
+        </div>
+
+      <div className="container mx-auto p-4 min-h-screen">
+        <div className="grid grid-cols-7 gap-2 h-full">
+          {images.map((image, index) => (
+            <ImageCard key={index} imageSrc={image.imageSrc} title={image.title} />
+          ))}
+        </div>
+      </div>
+    </div>
+
+    </>
+
+  );
+};
+
+const ImageCard = ({ imageSrc, title, currentColor }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleImageClick = () => {
+    setIsClicked(!isClicked);
+  };
+
+  return (
+
+    <div className="relative bg-blue-200 shadow-lg rounded-lg overflow-hidden flex flex-col">
+      <div className="relative flex flex-col justify-center items-center p-4 cursor-pointer h-48" onClick={handleImageClick}>
+        <img src={imageSrc} alt={title} className={`w-full h-full object-cover ${isClicked ? 'opacity-50' : ''}`} />
+        {isClicked && (
+          <div className="absolute inset-0 flex justify-center items-center">
+            <svg className="w-3/4 h-3/4 text-red-500" viewBox="0 0 100 100">
+              <line x1="10" y1="10" x2="90" y2="90" stroke={currentColor} strokeWidth="10" />
+              <line x1="90" y1="10" x2="10" y2="90" stroke={currentColor} strokeWidth="10" />
+            </svg>
+          </div>
+        )}
+      </div>
+      <div className="bg-blue-400  text-center py-2">
+        <span className="text-white font-semibold">{title}</span>
+      </div>
+    </div>
+  );
+};
+
+export default GuessWho;
