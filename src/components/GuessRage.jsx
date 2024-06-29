@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const GuessRage = () => {
-  const initialImages = [
-    { imageSrc: "/astelic.png", title: "astelic", strokeColor: '' },
+  const initialImages = [ 
+    { imageSrc: "/public/astelic.png", title: "astelic", strokeColor: '' },
     { imageSrc: "/boomer.png", title: "boomer", strokeColor: '' },
     { imageSrc: "/rachel.png", title: "rachel", strokeColor: '' },
     { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "bamf", strokeColor: '' },
@@ -60,7 +60,9 @@ const GuessRage = () => {
     { imageSrc: "/test57.png", title: "test57", strokeColor: '' },
     { imageSrc: "/test58.png", title: "test58", strokeColor: '' },
     { imageSrc: "/test59.png", title: "test59", strokeColor: '' },
-    { imageSrc: "/test60.png", title: "test60", strokeColor: '' }
+    { imageSrc: "/test60.png", title: "test60", strokeColor: '' },
+    { imageSrc: "/test61.png", title: "test60", strokeColor: '' }
+
 ];
 
 
