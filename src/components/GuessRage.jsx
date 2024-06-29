@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const GuessRage = () => {
-  const initialImages = [ 
-    { imageSrc: "/public/astelic.png", title: "astelic", strokeColor: '' },
+  const initialImages = [
+    { imageSrc: "/astelic.png", title: "astelic", strokeColor: '' },
     { imageSrc: "/boomer.png", title: "boomer", strokeColor: '' },
     { imageSrc: "/rachel.png", title: "rachel", strokeColor: '' },
     { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "bamf", strokeColor: '' },
@@ -24,7 +24,7 @@ const GuessRage = () => {
     { imageSrc: "/thirty.png", title: "ThirtyVirus", strokeColor: '' },
     { imageSrc: "/jess.png", title: "Sagemommy69", strokeColor: '' },
     { imageSrc: "/kayne.png", title: "Kayne", strokeColor: '' },
-    { imageSrc: "/zpyh.png", title: "Zyph", strokeColor: '' },
+    { imageSrc: "/zyph.png", title: "Zyph", strokeColor: '' },
     { imageSrc: "/max.png", title: "MaxK", strokeColor: '' },
     { imageSrc: "/colin.png", title: "Colin", strokeColor: '' },
     { imageSrc: "/krustydavid.png", title: "KrustyDavid", strokeColor: '' },
@@ -42,7 +42,7 @@ const GuessRage = () => {
     { imageSrc: "/kate.png", title: "Kate", strokeColor: '' },
     { imageSrc: "/ameila.png", title: "Ameila", strokeColor: '' },
     { imageSrc: "/dream.png", title: "Dream", strokeColor: '' },
-    { imageSrc: "/Matt.png", title: "Matt", strokeColor: '' },
+    { imageSrc: "/matt.png", title: "Matt", strokeColor: '' },
     { imageSrc: "/gamerboy80.png", title: "Gamerboy80", strokeColor: '' },
     { imageSrc: "/test44.png", title: "test44", strokeColor: '' },
     { imageSrc: "/test45.png", title: "test45", strokeColor: '' },
@@ -61,7 +61,7 @@ const GuessRage = () => {
     { imageSrc: "/test58.png", title: "test58", strokeColor: '' },
     { imageSrc: "/test59.png", title: "test59", strokeColor: '' },
     { imageSrc: "/test60.png", title: "test60", strokeColor: '' },
-    { imageSrc: "/test61.png", title: "test60", strokeColor: '' }
+    { imageSrc: "/test60.png", title: "test60", strokeColor: '' }
 
 ];
 
