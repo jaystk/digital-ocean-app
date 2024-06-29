@@ -20,7 +20,7 @@ const PullUpbar = () => {
   };
 
   return (
-    <div className='pl-[10rem]'>
+    <div className='pl-[6rem]'>
 
       <div className="relative w-[75rem] mx-auto">
         <div className="fixed w-[75rem] bottom-0 bg-white shadow-lg">
@@ -66,16 +66,16 @@ const PullUpbar = () => {
                   </div>
                   <div className="flex justify-center mt-4">
                     <button
-                      className={`text-black text-lg font-semibold flex items-center justify-center p-3 rounded-lg mx-2 w-64 ${
-                        q.selected === 'yes' ? 'bg-red-700' : 'bg-red-500'
+                      className={`text-white text-lg font-semibold flex items-center justify-center p-3 rounded-lg mx-2 w-64 outline outline-2 outline-offset-2 ${
+                        q.selected === 'yes' ? 'bg-green-500 ' : 'bg-transparent ' 
                       } `}
                       onClick={() => handleQuestionClick(q.setSelected, 'yes')}
                     >
                       Yes
                     </button>
                     <button
-                      className={`text-black text-lg font-semibold flex items-center justify-center p-3 rounded-lg mx-2 w-64 ${
-                        q.selected === 'no' ? 'bg-green-700' : 'bg-green-500'
+                      className={`text-white text-lg font-semibold flex items-center justify-center p-3 rounded-lg mx-2 w-64 outline outline-2 outline-offset-2 ${
+                        q.selected === 'no' ? 'bg-red-500 ' : 'bg-transparent ' 
                       } `}
                       onClick={() => handleQuestionClick(q.setSelected, 'no')}
                     >
