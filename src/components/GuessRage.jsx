@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const GuessRage = () => {
   const initialImages = [
-    { imageSrc: "/assets/astelic.png", title: "astelic", strokeColor: '' },
+    { imageSrc: "/src/assets/astelic.png", title: "astelic", strokeColor: '' },
     { imageSrc: "./src/assets/boomer.png", title: "boomer", strokeColor: '' },
     { imageSrc: "./src/assets/rachel.png", title: "rachel", strokeColor: '' },
     { imageSrc: "https://i.imgur.com/u1G0KGq.png", title: "bamf", strokeColor: '' },
