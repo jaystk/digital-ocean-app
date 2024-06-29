@@ -44,25 +44,19 @@ const GuessRage = () => {
     { imageSrc: "/dream.png", title: "Dream", strokeColor: '' },
     { imageSrc: "/matt.png", title: "Matt", strokeColor: '' },
     { imageSrc: "/gamerboy80.png", title: "Gamerboy80", strokeColor: '' },
-    { imageSrc: "/test44.png", title: "test44", strokeColor: '' },
-    { imageSrc: "/test45.png", title: "test45", strokeColor: '' },
-    { imageSrc: "/test46.png", title: "test46", strokeColor: '' },
-    { imageSrc: "/test47.png", title: "test47", strokeColor: '' },
-    { imageSrc: "/test48.png", title: "test48", strokeColor: '' },
-    { imageSrc: "/test49.png", title: "test49", strokeColor: '' },
-    { imageSrc: "/test50.png", title: "test50", strokeColor: '' },
-    { imageSrc: "/test51.png", title: "test51", strokeColor: '' },
-    { imageSrc: "/test52.png", title: "test52", strokeColor: '' },
-    { imageSrc: "/test53.png", title: "test53", strokeColor: '' },
-    { imageSrc: "/test54.png", title: "test54", strokeColor: '' },
-    { imageSrc: "/test55.png", title: "test55", strokeColor: '' },
-    { imageSrc: "/test56.png", title: "test56", strokeColor: '' },
-    { imageSrc: "/test57.png", title: "test57", strokeColor: '' },
-    { imageSrc: "/test58.png", title: "test58", strokeColor: '' },
-    { imageSrc: "/test59.png", title: "test59", strokeColor: '' },
-    { imageSrc: "/test60.png", title: "test60", strokeColor: '' },
-    { imageSrc: "/test60.png", title: "test60", strokeColor: '' }
-
+    { imageSrc: "/slothlover.png", title: "slothlover", strokeColor: '' },
+    { imageSrc: "/user.png", title: "user", strokeColor: '' },
+    { imageSrc: "/bombies.png", title: "bombies", strokeColor: '' },
+    { imageSrc: "/adam.png", title: "adam", strokeColor: '' },
+    { imageSrc: "/eva.png", title: "eva", strokeColor: '' },
+    { imageSrc: "/alessandra.png", title: "alessandra", strokeColor: '' },
+    { imageSrc: "/padyn.png", title: "padyn", strokeColor: '' },
+    { imageSrc: "/nat.png", title: "nat", strokeColor: '' },
+    { imageSrc: "/shane.png", title: "shane", strokeColor: '' },
+    { imageSrc: "/sami.png", title: "sami", strokeColor: '' },
+    { imageSrc: "/soundify.png", title: "soundify", strokeColor: '' },
+    { imageSrc: "/mellowmelt.png", title: "mellowmelt", strokeColor: '' },
+    { imageSrc: "/timedeo.png", title: "timedeo", strokeColor: '' },
 ];
 
 
@@ -98,7 +92,7 @@ const GuessRage = () => {
         </div>
 
         <div className="p-4 pb-10 min-h-screen">
-          <div className="grid grid-cols-12 gap-2 h-full">
+          <div className="grid grid-cols-11 gap-2 h-full">
             {images.map((image, index) => (
               <ImageCard 
                 key={index} 
