@@ -51,7 +51,7 @@ const GuessRage = () => {
     { imageSrc: "/eva.png", title: "eva", strokeColor: '' },
     { imageSrc: "/alessandra.png", title: "alessandra", strokeColor: '' },
     { imageSrc: "/padyn.png", title: "padyn", strokeColor: '' },
-    { imageSrc: "/delta.png", title: "nat", strokeColor: '' },
+    { imageSrc: "/IMG_1694.jpeg", title: "nat", strokeColor: '' },
     { imageSrc: "/shane.png", title: "shane", strokeColor: '' },
     { imageSrc: "/sami.png", title: "sami", strokeColor: '' },
     { imageSrc: "/soundify.png", title: "soundify", strokeColor: '' },
