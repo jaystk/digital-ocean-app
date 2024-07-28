@@ -44,7 +44,7 @@ const GuessRage = () => {
     { imageSrc: "/dream.png", title: "Dream", strokeColor: '' },
     { imageSrc: "/matt.png", title: "Matt", strokeColor: '' },
     { imageSrc: "/gamerboy80.png", title: "Gamerboy80", strokeColor: '' },
-    { imageSrc: "/emily.png", title: "emily", strokeColor: '' },
+    { imageSrc: "/emily.png", title: "em", strokeColor: '' },
     { imageSrc: "/user.png", title: "user", strokeColor: '' },
     { imageSrc: "/bombies.png", title: "bombies", strokeColor: '' },
     { imageSrc: "/adam.png", title: "adam", strokeColor: '' },
